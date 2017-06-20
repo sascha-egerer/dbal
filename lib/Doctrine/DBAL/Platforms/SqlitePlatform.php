@@ -392,6 +392,16 @@ class SqlitePlatform extends AbstractPlatform
     }
 
     /**
+     * Gets the maximum number of placeholders for prepared statements
+     *
+     * @return integer
+     */
+    public function getMaximumNumberOfPreparedStatementPlaceholders()
+    {
+        return 999;
+    }
+
+    /**
      * {@inheritDoc}
      */
     public function getClobTypeDeclarationSQL(array $field)
